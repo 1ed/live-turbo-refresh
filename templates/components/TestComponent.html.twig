@@ -1,0 +1,11 @@
+<div{{ attributes }}>
+    <div style="min-height:1000px">LONG LONG TEXT... scroll down</div>
+    <ul id="data">
+    {% for d in data %}
+      <li>{{ d }}</li>
+    {% endfor %}
+    </ul>
+    <a data-action="live#action" data-action-name="prevent|do()">DO</a>
+    <a data-action="live#action" data-action-name="prevent|clear()">CLEAR</a>
+    <div style="min-height:1000px">LONG</div>
+</div>
